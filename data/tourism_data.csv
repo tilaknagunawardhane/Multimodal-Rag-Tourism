@@ -1,0 +1,5 @@
+attraction_id,name,category,district,entrance_fee_lkr,opening_hours,best_season_to_visit
+T001,Temple of the Sacred Tooth Relic,Historical Temple,Kandy,3000,05:00-20:00,Year-round
+T002,Sigiriya Rock Fortress,Historical Site,Matale,11305,07:00-17:00,Jan-Apr
+N001,Yala National Park,National Park,Hambantota,9000,06:00-18:00,Feb-Jul
+N002,Udawalawe National Park,National Park,Ratnapura,7500,06:00-18:00,May-Sep

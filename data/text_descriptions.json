@@ -1,0 +1,18 @@
+[
+  {
+    "attraction_id": "T001",
+    "description": "The Temple of the Sacred Tooth Relic is a world-renowned Buddhist temple situated in the royal palace complex of the former Kingdom of Kandy. It houses the relic of the tooth of the Buddha. Visitors must dress modestly, covering shoulders and knees."
+  },
+  {
+    "attraction_id": "T002",
+    "description": "Sigiriya is an ancient rock fortress dominated by a massive column of rock nearly 200 meters high. King Kasyapa built his palace on the top of this rock and decorated its sides with colorful frescoes. The climb features a gateway in the form of an enormous lion."
+  },
+  {
+    "attraction_id": "N001",
+    "description": "Yala National Park is the most visited and second largest national park in Sri Lanka, bordering the Indian Ocean. It is highly renowned for its variety of wild animals and holds one of the highest leopard densities in the world."
+  },
+  {
+    "attraction_id": "N002",
+    "description": "Udawalawe National Park is an important habitat for water birds and Sri Lankan elephants. It is one of the best places in the world to see wild elephants up close, thanks to the large herds that gather around the Udawalawe reservoir."
+  }
+]
