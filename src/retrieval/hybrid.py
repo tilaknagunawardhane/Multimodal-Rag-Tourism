@@ -65,7 +65,7 @@ def generate_hybrid_rag_response(user_text_query: str = None, image_input = None
 
  # Generate Response with Gemini using the new SDK
     response = client.models.generate_content(
-        model='gemini-2.5-flash',
+        model='gemini-3.5-flash',
         contents=prompt
     )
 

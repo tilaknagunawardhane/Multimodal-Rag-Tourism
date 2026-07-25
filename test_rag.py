@@ -9,5 +9,5 @@ if __name__ == "__main__":
         max_budget_lkr=10000
     )
     
-    print("🤖 Generated Response:")
+    print("[BOT] Generated Response:")
     print(result["llm_response"])
