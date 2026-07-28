@@ -27,7 +27,7 @@ def generate_hybrid_rag_response(user_text_query: str = None, image_input = None
 
     # 1. Structured DB Retrieval
     if max_budget_lkr is not None:
-        sql = f"SELECT name, category, district, entrance_fee_lkr, opening_hours FROM attractions WHERE entrance_fee_lkr <= {max_budget_lkr};"
+        sql = f"SELECT attraction_id, name, category, district, entrance_fee_lkr, opening_hours FROM attractions WHERE entrance_fee_lkr <= {max_budget_lkr};"
         db_results = run_structured_query(sql)
         retrieved_metadata["structured"] = db_results
         context_blocks.append(f"--- Structured Facts (Budget <= {max_budget_lkr} LKR) ---\n{db_results}")

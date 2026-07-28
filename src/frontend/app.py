@@ -209,16 +209,35 @@ if prompt := st.chat_input("E.g., 'What are some quiet historical temples with b
                 # Render LLM Answer
                 st.markdown(llm_text)
                 
-                # Extract attraction IDs from context to show images
-                attraction_ids = set()
+                # Extract candidate attraction IDs from context
+                candidate_ids = set()
                 if "semantic" in context_data:
                     for item in context_data["semantic"]:
                         if "attraction_id" in item:
-                            attraction_ids.add(item["attraction_id"])
+                            candidate_ids.add(item["attraction_id"])
                 if "visual" in context_data:
                     for item in context_data["visual"]:
                         if "attraction_id" in item:
-                            attraction_ids.add(item["attraction_id"])
+                            candidate_ids.add(item["attraction_id"])
+                            
+                # Map attraction_id to name from structured context
+                id_to_name = {}
+                if "structured" in context_data:
+                    for row in context_data["structured"]:
+                        if "attraction_id" in row and "name" in row:
+                            id_to_name[row["attraction_id"]] = row["name"]
+                            
+                # Filter to only show images of places the LLM actually talked about
+                attraction_ids = set()
+                for aid in candidate_ids:
+                    name = id_to_name.get(aid)
+                    if name:
+                        # Check if the main part of the name (e.g. "Sigiriya", "Temple", "Mirissa") is in the response
+                        first_word = name.split()[0].lower()
+                        if first_word in llm_text.lower():
+                            attraction_ids.add(aid)
+                    else:
+                        attraction_ids.add(aid) # Fallback if we don't have the name mapping
                             
                 # Fetch and display images
                 images_to_show = []
