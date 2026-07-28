@@ -1,0 +1,9 @@
+psycopg2-binary
+qdrant-client
+sentence-transformers
+transformers
+torch
+Pillow
+google-genai
+python-dotenv
+streamlit

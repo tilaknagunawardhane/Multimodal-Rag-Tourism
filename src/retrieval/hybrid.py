@@ -1,5 +1,5 @@
 import os
-from google import genai  # <-- Make sure it is exactly this syntax!
+from google import genai  
 from dotenv import load_dotenv
 
 from .structured import run_structured_query

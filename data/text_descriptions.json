@@ -14,5 +14,17 @@
   {
     "attraction_id": "N002",
     "description": "Udawalawe National Park is an important habitat for water birds and Sri Lankan elephants. It is one of the best places in the world to see wild elephants up close, thanks to the large herds that gather around the Udawalawe reservoir."
+  },
+  {
+    "attraction_id": "B001",
+    "description": "Mirissa Beach is a stunning crescent of sand bordered by palm trees and clear blue waters. It is famous for its vibrant nightlife, surfing, and as one of the best spots in the world for whale watching."
+  },
+  {
+    "attraction_id": "M001",
+    "description": "Adam's Peak is a tall, conical mountain located in central Sri Lanka. It is well known for the Sri Pada, a sacred footprint rock formation near the summit. The sunrise viewed from the peak is considered majestic."
+  },
+  {
+    "attraction_id": "W001",
+    "description": "Bambarakanda Falls is the tallest waterfall in Sri Lanka. It cascades down a steep rock face surrounded by dense pine forests. The remote, lush location offers excellent trekking trails."
   }
 ]
