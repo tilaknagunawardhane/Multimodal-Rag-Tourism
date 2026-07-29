@@ -1,5 +1,7 @@
 import os
-from google import genai  
+import time
+from google import genai
+from google.genai import errors as genai_errors
 from dotenv import load_dotenv
 
 from .structured import run_structured_query
@@ -12,7 +14,8 @@ load_dotenv(os.path.join(SCRIPT_DIR, "../../.env"))
 # Configure Gemini
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 client = genai.Client(api_key=GEMINI_API_KEY)
-# model = genai.GenerativeModel('gemini-2.5-flash')
+
+GEMINI_MODEL = "gemini-3.1-flash-lite"  # confirmed available from models.list()
 
 def generate_hybrid_rag_response(user_text_query: str = None, image_input = None, max_budget_lkr: int = None):
     """
@@ -63,11 +66,23 @@ def generate_hybrid_rag_response(user_text_query: str = None, image_input = None
     Answer:
     """
 
- # Generate Response with Gemini using the new SDK
-    response = client.models.generate_content(
-        model='gemini-3.5-flash',
-        contents=prompt
-    )
+ # Generate Response with Gemini — retry on transient 503/429 errors
+    max_retries = 4
+    for attempt in range(max_retries):
+        try:
+            response = client.models.generate_content(
+                model=GEMINI_MODEL,
+                contents=prompt
+            )
+            break  # success
+        except (genai_errors.ServerError, genai_errors.ClientError) as e:
+            retryable = getattr(e, 'status_code', None) in (429, 503)
+            if retryable and attempt < max_retries - 1:
+                wait = 2 ** attempt  # 1s, 2s, 4s, 8s
+                print(f"[Gemini] {e.status_code} — retrying in {wait}s (attempt {attempt + 1}/{max_retries})...")
+                time.sleep(wait)
+            else:
+                raise  # re-raise after final attempt or non-retryable error
 
     return {
         "llm_response": response.text,
