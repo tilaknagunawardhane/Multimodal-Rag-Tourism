@@ -1,8 +1,31 @@
 attraction_id,name,category,district,entrance_fee_lkr,opening_hours,best_season_to_visit
-T001,Temple of the Sacred Tooth Relic,Historical Temple,Kandy,3000,05:00-20:00,Year-round
-T002,Sigiriya Rock Fortress,Historical Site,Matale,11305,07:00-17:00,Jan-Apr
+B001,Mirissa Beach,Beach,Matara,0,24 Hours,Nov-Apr
+B002,Unawatuna Beach,Beach,Galle,0,24 Hours,Nov-Apr
+B003,Arugam Bay,Beach,Ampara,0,24 Hours,May-Sep
+B004,Bentota Beach,Beach,Galle,0,24 Hours,Oct-Apr
+B005,Nilaveli Beach,Beach,Trincomalee,0,24 Hours,May-Sep
+M001,Adams Peak,Mountain,Nuwara Eliya,0,24 Hours,Dec-May
+M002,Ella Rock,Mountain,Badulla,0,06:00-18:00,Year-round
+M003,Knuckles Mountain Range,Mountain,Matale,600,06:00-18:00,Mar-Sep
+M004,Pidurutalagala,Mountain,Nuwara Eliya,200,08:00-16:00,Dec-Apr
+M005,Bible Rock,Mountain,Kegalle,0,06:00-18:00,Year-round
 N001,Yala National Park,National Park,Hambantota,9000,06:00-18:00,Feb-Jul
 N002,Udawalawe National Park,National Park,Ratnapura,7500,06:00-18:00,May-Sep
-B001,Mirissa Beach,Beach,Matara,0,24 Hours,Nov-Apr
-M001,Adams Peak,Mountain,Nuwara Eliya,0,24 Hours,Dec-May
+N003,Wilpattu National Park,National Park,Puttalam,8500,06:00-18:00,Feb-Oct
+N004,Minneriya National Park,National Park,Polonnaruwa,8000,06:00-18:00,Jul-Oct
+N005,Horton Plains National Park,National Park,Nuwara Eliya,8000,06:00-16:00,Jan-Mar
+T001,Temple of the Sacred Tooth Relic,Temple,Kandy,3000,05:00-20:00,Year-round
+T002,Dambulla Cave Temple,Temple,Matale,2500,07:00-19:00,Year-round
+T003,Gangaramaya Temple,Temple,Colombo,500,06:00-22:00,Year-round
+T004,Koneswaram Temple,Temple,Trincomalee,0,06:00-18:45,Year-round
+T005,Kelaniya Raja Maha Vihara,Temple,Gampaha,0,05:00-21:00,Year-round
+H001,Sigiriya Rock Fortress,Historical Site,Matale,11305,07:00-17:00,Jan-Apr
+H002,Galle Fort,Historical Site,Galle,0,24 Hours,Year-round
+H003,Ancient City of Polonnaruwa,Historical Site,Polonnaruwa,9500,07:00-17:30,May-Sep
+H004,Ancient City of Anuradhapura,Historical Site,Anuradhapura,9500,07:00-18:00,Year-round
+H005,Yapahuwa Rock Fortress,Historical Site,Kurunegala,1000,08:00-17:00,Year-round
 W001,Bambarakanda Falls,Waterfall,Badulla,200,08:00-17:00,Sep-Jan
+W002,Diyaluma Falls,Waterfall,Badulla,0,24 Hours,Aug-Dec
+W003,Bopath Ella,Waterfall,Ratnapura,100,06:00-18:00,Year-round
+W004,Devon Falls,Waterfall,Nuwara Eliya,0,24 Hours,Dec-Mar
+W005,St Clairs Falls,Waterfall,Nuwara Eliya,0,24 Hours,Dec-Mar
