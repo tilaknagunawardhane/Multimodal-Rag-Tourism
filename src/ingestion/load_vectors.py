@@ -49,7 +49,7 @@ def load_vector_data():
         vector = text_model.encode(item["description"]).tolist()  #translate the English paragraph into a vector
         text_points.append(
             PointStruct( #packages the data into Qdrant's required format. It includes the UUID, the vector itself, and a payload
-                id=get_uuid(item["attraction_id"]),
+                id=get_uuid(item["chunk_id"]),
                 vector=vector,
                 payload={"attraction_id": item["attraction_id"], "text": item["description"]}
             )

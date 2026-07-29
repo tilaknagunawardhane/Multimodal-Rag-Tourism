@@ -1,30 +1,302 @@
 [
   {
-    "attraction_id": "T001",
-    "description": "The Temple of the Sacred Tooth Relic is a world-renowned Buddhist temple situated in the royal palace complex of the former Kingdom of Kandy. It houses the relic of the tooth of the Buddha. Visitors must dress modestly, covering shoulders and knees."
-  },
-  {
-    "attraction_id": "T002",
-    "description": "Sigiriya is an ancient rock fortress dominated by a massive column of rock nearly 200 meters high. King Kasyapa built his palace on the top of this rock and decorated its sides with colorful frescoes. The climb features a gateway in the form of an enormous lion."
-  },
-  {
-    "attraction_id": "N001",
-    "description": "Yala National Park is the most visited and second largest national park in Sri Lanka, bordering the Indian Ocean. It is highly renowned for its variety of wild animals and holds one of the highest leopard densities in the world."
-  },
-  {
-    "attraction_id": "N002",
-    "description": "Udawalawe National Park is an important habitat for water birds and Sri Lankan elephants. It is one of the best places in the world to see wild elephants up close, thanks to the large herds that gather around the Udawalawe reservoir."
+    "attraction_id": "B001",
+    "chunk_id": "B001-1",
+    "description": "Mirissa Beach is a stunning crescent of sand bordered by palm trees and clear blue waters on the southern coast of Sri Lanka."
   },
   {
     "attraction_id": "B001",
-    "description": "Mirissa Beach is a stunning crescent of sand bordered by palm trees and clear blue waters. It is famous for its vibrant nightlife, surfing, and as one of the best spots in the world for whale watching."
+    "chunk_id": "B001-2",
+    "description": "Mirissa is famous for its vibrant nightlife, surfing, and is widely considered one of the best spots in the world for whale and dolphin watching."
+  },
+  {
+    "attraction_id": "B002",
+    "chunk_id": "B002-1",
+    "description": "Unawatuna Beach is a beautiful, horseshoe-shaped stretch of golden sand with calm, turquoise waters protected by twin reefs."
+  },
+  {
+    "attraction_id": "B002",
+    "chunk_id": "B002-2",
+    "description": "Unawatuna is a major hub for scuba diving and snorkeling, and visitors frequently hike up to the nearby Japanese Peace Pagoda for panoramic sunset views."
+  },
+  {
+    "attraction_id": "B003",
+    "chunk_id": "B003-1",
+    "description": "Arugam Bay is located on the southeast coast, characterized by its moon-shaped curl of soft sand and laid-back tropical atmosphere."
+  },
+  {
+    "attraction_id": "B003",
+    "chunk_id": "B003-2",
+    "description": "Arugam Bay is a world-renowned surfing destination, drawing international surfers particularly during its peak season from May to September."
+  },
+  {
+    "attraction_id": "B004",
+    "chunk_id": "B004-1",
+    "description": "Bentota Beach is a premier coastal resort town facing the Indian Ocean on one side and a tranquil tropical lagoon on the other."
+  },
+  {
+    "attraction_id": "B004",
+    "chunk_id": "B004-2",
+    "description": "Bentota is famous as the water sports capital of Sri Lanka, offering jet-skiing, windsurfing, and serene boat safaris along the lush Madu Ganga river."
+  },
+  {
+    "attraction_id": "B005",
+    "chunk_id": "B005-1",
+    "description": "Nilaveli Beach is a pristine, white sandy beach located in Trincomalee on the east coast, known for its remarkably clear, shallow waters."
+  },
+  {
+    "attraction_id": "B005",
+    "chunk_id": "B005-2",
+    "description": "Nilaveli serves as the primary gateway to Pigeon Island National Park, offering visitors excellent snorkeling opportunities among vibrant coral reefs and reef sharks."
   },
   {
     "attraction_id": "M001",
-    "description": "Adam's Peak is a tall, conical mountain located in central Sri Lanka. It is well known for the Sri Pada, a sacred footprint rock formation near the summit. The sunrise viewed from the peak is considered majestic."
+    "chunk_id": "M001-1",
+    "description": "Adams Peak is a tall, conical mountain in central Sri Lanka, rising dramatically above the surrounding forested hills and offering breathtaking sunrise views."
+  },
+  {
+    "attraction_id": "M001",
+    "chunk_id": "M001-2",
+    "description": "Adams Peak is a highly revered pilgrimage site featuring the Sri Pada (sacred footprint) rock formation near the summit, scaled by thousands of devotees at night."
+  },
+  {
+    "attraction_id": "M002",
+    "chunk_id": "M002-1",
+    "description": "Ella Rock is a dramatic cliff and mountain peak offering unparalleled panoramic views of the Ella Gap and surrounding lush green valleys."
+  },
+  {
+    "attraction_id": "M002",
+    "chunk_id": "M002-2",
+    "description": "Accessible via a scenic but steep hiking trail, the journey to Ella Rock takes visitors past cascading tea plantations, eucalyptus forests, and active railway tracks."
+  },
+  {
+    "attraction_id": "M003",
+    "chunk_id": "M003-1",
+    "description": "The Knuckles Mountain Range is a rugged, misty region in central Sri Lanka characterized by striking, folded peaks that resemble a clenched fist."
+  },
+  {
+    "attraction_id": "M003",
+    "chunk_id": "M003-2",
+    "description": "Designated as a UNESCO World Heritage site, the Knuckles range is known for its rich biodiversity, rare cloud forests, and remote, challenging trekking trails."
+  },
+  {
+    "attraction_id": "M004",
+    "chunk_id": "M004-1",
+    "description": "Pidurutalagala is the highest mountain peak in Sri Lanka, dominating the central highlands and overlooking the cool-climate city of Nuwara Eliya."
+  },
+  {
+    "attraction_id": "M004",
+    "chunk_id": "M004-2",
+    "description": "While hiking to the top is restricted due to a high-security radar station, visitors can drive to the summit to enjoy sweeping views of the surrounding forest reserve."
+  },
+  {
+    "attraction_id": "M005",
+    "chunk_id": "M005-1",
+    "description": "Bible Rock, locally known as Bathalegala, is a distinctive mountain in Kegalle featuring a prominent flat, rectangular top that resembles an open book."
+  },
+  {
+    "attraction_id": "M005",
+    "chunk_id": "M005-2",
+    "description": "Bible Rock is a popular hiking destination that offers a rewarding, moderately challenging climb resulting in 360-degree views of the scenic Kegalle district."
+  },
+  {
+    "attraction_id": "N001",
+    "chunk_id": "N001-1",
+    "description": "Yala National Park is Sri Lanka's most visited wildlife sanctuary, featuring diverse ecosystems from moist monsoon forests to marine wetlands bordering the Indian Ocean."
+  },
+  {
+    "attraction_id": "N001",
+    "chunk_id": "N001-2",
+    "description": "Yala is highly renowned globally for its incredible variety of wild animals and holds one of the highest leopard densities in the world."
+  },
+  {
+    "attraction_id": "N002",
+    "chunk_id": "N002-1",
+    "description": "Udawalawe National Park is a massive wildlife reserve centered around the Udawalawe reservoir, characterized by expansive, open grasslands and scrub terrain."
+  },
+  {
+    "attraction_id": "N002",
+    "chunk_id": "N002-2",
+    "description": "Udawalawe is widely considered one of the best places in the world to observe wild Sri Lankan elephants up close as they gather in large herds."
+  },
+  {
+    "attraction_id": "N003",
+    "chunk_id": "N003-1",
+    "description": "Wilpattu National Park is Sri Lanka's largest and oldest national park, uniquely famous for its numerous 'Willus'—natural, sand-rimmed water basins that fill with rainwater."
+  },
+  {
+    "attraction_id": "N003",
+    "chunk_id": "N003-2",
+    "description": "Wilpattu's dense forests and tranquil lakes make it a prime location for spotting elusive leopards, sloth bears, and a vast array of resident and migratory birds."
+  },
+  {
+    "attraction_id": "N004",
+    "chunk_id": "N004-1",
+    "description": "Minneriya National Park is a vibrant wildlife sanctuary centered around the ancient Minneriya Tank, which provides a crucial dry-season feeding ground."
+  },
+  {
+    "attraction_id": "N004",
+    "chunk_id": "N004-2",
+    "description": "Minneriya is famous for 'The Gathering,' a spectacular annual wildlife event where hundreds of wild elephants congregate around the shrinking reservoir to feed and bathe."
+  },
+  {
+    "attraction_id": "N005",
+    "chunk_id": "N005-1",
+    "description": "Horton Plains National Park is an elevated, wind-swept plateau in the central highlands covered by wild montane grasslands and dense cloud forests."
+  },
+  {
+    "attraction_id": "N005",
+    "chunk_id": "N005-2",
+    "description": "Horton Plains is a favorite for early morning treks, home to large herds of sambar deer, the beautiful Baker's Falls, and the spectacular World's End precipice."
+  },
+  {
+    "attraction_id": "T001",
+    "chunk_id": "T001-1",
+    "description": "The Temple of the Sacred Tooth Relic is a world-renowned Buddhist temple characterized by its golden roof, situated in the royal palace complex of the former Kingdom of Kandy."
+  },
+  {
+    "attraction_id": "T001",
+    "chunk_id": "T001-2",
+    "description": "This temple houses the sacred relic of the tooth of the Buddha. Visitors are strictly required to dress modestly, ensuring their shoulders and knees are covered."
+  },
+  {
+    "attraction_id": "T002",
+    "chunk_id": "T002-1",
+    "description": "Dambulla Cave Temple is the largest and best-preserved cave temple complex in Sri Lanka, housed within a massive rock tower that rises 160 meters over the surrounding plains."
+  },
+  {
+    "attraction_id": "T002",
+    "chunk_id": "T002-2",
+    "description": "The Dambulla caves contain over 150 stunning statues of Buddha, with the cave walls and ceilings completely covered in intricate, ancient religious murals."
+  },
+  {
+    "attraction_id": "T003",
+    "chunk_id": "T003-1",
+    "description": "Gangaramaya Temple is one of the most important and visually striking temples in Colombo, uniquely located near the Beira Lake."
+  },
+  {
+    "attraction_id": "T003",
+    "chunk_id": "T003-2",
+    "description": "Gangaramaya showcases a fascinating mix of modern architecture and cultural essence, featuring a museum, a library, and an eclectic collection of Buddhist artifacts gifted from around the world."
+  },
+  {
+    "attraction_id": "T004",
+    "chunk_id": "T004-1",
+    "description": "Koneswaram Temple is a classical-medieval Hindu temple complex in Trincomalee, perched high on a scenic cliff overlooking the deep blue waters of the Indian Ocean."
+  },
+  {
+    "attraction_id": "T004",
+    "chunk_id": "T004-2",
+    "description": "Dedicated to Lord Shiva, the Koneswaram temple grounds are surrounded by dramatic ocean views and feature bright, colorful mythological sculptures and shrines."
+  },
+  {
+    "attraction_id": "T005",
+    "chunk_id": "T005-1",
+    "description": "Kelaniya Raja Maha Vihara is a profoundly historic Buddhist temple located near Colombo, set alongside the serene banks of the Kelani River."
+  },
+  {
+    "attraction_id": "T005",
+    "chunk_id": "T005-2",
+    "description": "Kelaniya is believed to have been hallowed during the Buddha's final visit to Sri Lanka, and is highly renowned for its beautiful, detailed paintings by artist Solias Mendis."
+  },
+  {
+    "attraction_id": "H001",
+    "chunk_id": "H001-1",
+    "description": "Sigiriya Rock Fortress is an ancient citadel dominated by a massive, dramatic column of rock nearly 200 meters high, surrounded by symmetrical water gardens."
+  },
+  {
+    "attraction_id": "H001",
+    "chunk_id": "H001-2",
+    "description": "Built by King Kasyapa, Sigiriya requires visitors to climb past a giant lion-shaped gateway to reach the summit, and features vibrant, ancient frescoes painted directly on the rock face."
+  },
+  {
+    "attraction_id": "H002",
+    "chunk_id": "H002-1",
+    "description": "Galle Fort is a sprawling, fortified old city on the southwest coast, originally built by the Portuguese in 1588 and later extensively fortified by the Dutch."
+  },
+  {
+    "attraction_id": "H002",
+    "chunk_id": "H002-2",
+    "description": "Now a UNESCO World Heritage site, Galle Fort is beloved for its preserved European architectural styles, cobblestone streets, boutique cafes, and its iconic historic lighthouse."
+  },
+  {
+    "attraction_id": "H003",
+    "chunk_id": "H003-1",
+    "description": "The Ancient City of Polonnaruwa was the second capital of Sri Lanka, offering visitors vast, well-preserved ruins of ancient palaces, council halls, and bathing pools."
+  },
+  {
+    "attraction_id": "H003",
+    "chunk_id": "H003-2",
+    "description": "Polonnaruwa's most famous highlight is the Gal Vihara, a majestic rock temple featuring four colossal, perfectly detailed statues of the Buddha carved directly into a granite face."
+  },
+  {
+    "attraction_id": "H004",
+    "chunk_id": "H004-1",
+    "description": "The Ancient City of Anuradhapura was the first capital of Sri Lanka, featuring some of the most extensive and well-preserved ruins of ancient Sinhalese civilization."
+  },
+  {
+    "attraction_id": "H004",
+    "chunk_id": "H004-2",
+    "description": "Deeply sacred to the Buddhist world, Anuradhapura houses towering brick dagobas (stupas) and the Jaya Sri Maha Bodhi, recognized as one of the oldest living human-planted trees in the world."
+  },
+  {
+    "attraction_id": "H005",
+    "chunk_id": "H005-1",
+    "description": "Yapahuwa Rock Fortress is a massive granite rock rising abruptly from the surrounding plains, serving briefly as the capital of Sri Lanka in the late 13th century."
+  },
+  {
+    "attraction_id": "H005",
+    "chunk_id": "H005-2",
+    "description": "Yapahuwa is most famous for its steep, majestic ornamental staircase leading up the rock, culminating in a beautifully carved stone doorway guarded by fierce stone lions."
   },
   {
     "attraction_id": "W001",
-    "description": "Bambarakanda Falls is the tallest waterfall in Sri Lanka. It cascades down a steep rock face surrounded by dense pine forests. The remote, lush location offers excellent trekking trails."
+    "chunk_id": "W001-1",
+    "description": "Bambarakanda Falls is the tallest waterfall in Sri Lanka, cascading down a sheer 263-meter rock face surrounded by dense, dark pine forests."
+  },
+  {
+    "attraction_id": "W001",
+    "chunk_id": "W001-2",
+    "description": "Located in a remote and lush area of the Kalupahana mountains, Bambarakanda offers excellent but challenging trekking trails for adventurous hikers."
+  },
+  {
+    "attraction_id": "W002",
+    "chunk_id": "W002-1",
+    "description": "Diyaluma Falls is Sri Lanka's second-highest waterfall, pouring powerfully over a dramatic cliff edge near the town of Koslanda."
+  },
+  {
+    "attraction_id": "W002",
+    "chunk_id": "W002-2",
+    "description": "Diyaluma is highly popular for the hike to its upper falls, which reveals a series of natural, crystal-clear rock pools perfect for swimming alongside sweeping valley views."
+  },
+  {
+    "attraction_id": "W003",
+    "chunk_id": "W003-1",
+    "description": "Bopath Ella is a uniquely shaped waterfall in the Ratnapura district, cascading in a formation that distinctively resembles the leaf of a sacred bo tree."
+  },
+  {
+    "attraction_id": "W003",
+    "chunk_id": "W003-2",
+    "description": "Bopath Ella is a highly accessible and popular picnic destination for locals, surrounded by rich biodiversity, myths, and local folklore."
+  },
+  {
+    "attraction_id": "W004",
+    "chunk_id": "W004-1",
+    "description": "Devon Falls, often known as the 'Veil of the Valley', is a stunning, wide, tiered waterfall prominently visible from the Hatton-Nuwara Eliya highway."
+  },
+  {
+    "attraction_id": "W004",
+    "chunk_id": "W004-2",
+    "description": "Set against a beautiful backdrop of lush, manicured green tea estates, Devon Falls is easily one of the most photographed waterfalls in the country."
+  },
+  {
+    "attraction_id": "W005",
+    "chunk_id": "W005-1",
+    "description": "St Clairs Falls is a massive, powerful cascade often referred to as the 'Little Niagara of Sri Lanka', formed by the Kotmale Oya dividing over a wide rock ledge."
+  },
+  {
+    "attraction_id": "W005",
+    "chunk_id": "W005-2",
+    "description": "Located right in the middle of rolling tea plantations, St Clairs Falls offers spectacular, easy-to-reach panoramic viewing points directly along the main road."
   }
 ]
