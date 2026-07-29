@@ -46,9 +46,11 @@ st.markdown("""
         color: #f8fafc;
     }
 
-    /* Hide Streamlit Header & Footer for a native app feel */
-    header {visibility: hidden;}
+    /* Hide Streamlit Header elements for a native app feel but keep sidebar toggle */
+    #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
+    header {background-color: transparent !important;}
+    [data-testid="stHeaderActionElements"] {display: none;}
 
     /* Sidebar Glassmorphism */
     [data-testid="stSidebar"] {
