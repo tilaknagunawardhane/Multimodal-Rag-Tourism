@@ -1,5 +1,6 @@
 import os
 import time
+import json
 from google import genai
 from google.genai import errors as genai_errors
 from dotenv import load_dotenv
@@ -138,6 +139,12 @@ def generate_hybrid_rag_response(
             else:
                 raise
 
+    # debug
+    print("\n" + "="*60)
+    print("[Retrieved Metadata]")
+    print("="*60)
+    print(json.dumps(retrieved_metadata, indent=2, default=str))
+    print("="*60)
     return {
         "llm_response": response.text,
         "retrieved_context": retrieved_metadata
