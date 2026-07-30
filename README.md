@@ -5,15 +5,22 @@ This is a Multimodal Retrieval-Augmented Generation (RAG) system designed for th
 
 ## System Architecture
 The application follows a modular RAG architecture:
-1. **Frontend**: Streamlit-based web application (`src/frontend/app.py`).
-2. **Ingestion Pipelines**:
-   - `load_sql.py`: Connects to Neon PostgreSQL to ingest structured data (fees, locations, hours) from `tourism_data.csv`.
-   - `load_vectors.py`: Processes textual descriptions (`text_descriptions.json`) using SentenceTransformers (`all-MiniLM-L6-v2`) and images (`data/images/`) using OpenAI's CLIP model. The generated embeddings are stored in two distinct Qdrant collections.
-3. **Retrieval Pipelines**:
+
+1. **Frontend (`src/frontend/`)**: 
+   - `app.py`: Streamlit-based interactive web application.
+   - `styles.py`: Centralized CSS injection for a deep slate dark theme, modern typography, and glassmorphism UI components.
+   - `components/` and `utils/`: Modular helper elements for frontend rendering.
+
+2. **Ingestion Pipelines (`src/ingestion/`)**:
+   - `load_sql.py`: Connects to Neon PostgreSQL to ingest structured data (fees, locations, hours) from `data/tourism_data.csv`.
+   - `load_vectors.py`: Processes textual descriptions (`data/text_descriptions.json`) using SentenceTransformers (`all-MiniLM-L6-v2`) and images (`data/images/`) using OpenAI's CLIP model. The generated embeddings are stored in two distinct Qdrant collections.
+
+3. **Retrieval Pipelines (`src/retrieval/`)**:
+   - **Intent Extraction** (`intent.py`): Parses user natural language queries into structured JSON parameters using Gemini to auto-detect location, category, and budget.
    - **Structured** (`structured.py`): Performs SQL lookups in PostgreSQL to enforce budget constraints and factual data.
    - **Semantic Text** (`semantic.py`): Embeds the user query and searches the Qdrant text collection using Cosine Similarity.
    - **Visual Image** (`visual.py`): Embeds a user-uploaded image via CLIP and searches the Qdrant image collection for visually similar attractions.
-   - **Hybrid Integrator** (`hybrid.py`): Combines structured facts, semantic text contexts, and visual matches, then passes them to a Large Language Model (Gemini 2.5 Flash) to generate a cohesive natural language response.
+   - **Hybrid Integrator** (`hybrid.py`): Combines extracted intents, structured facts, semantic text contexts, and visual matches, then passes them to a Large Language Model (Gemini Flash) to generate a cohesive natural language response.
 
 ## Database Design
 - **Relational Database (Neon PostgreSQL)**:
@@ -62,9 +69,9 @@ The application follows a modular RAG architecture:
    ```
 
 3. **Test the Pipeline**:
-   Run a simple hybrid retrieval test script directly in the terminal:
+   Run the newly updated comprehensive test suite, which evaluates NL intent extraction, explicit filters, semantic similarity, and multimodal searches:
    ```bash
-   python test_rag.py
+   python test_updated_rag.py
    ```
 
 4. **Launch the Web Interface**:
