@@ -11,7 +11,6 @@ load_dotenv(os.path.join(SCRIPT_DIR, "../../.env"))
 QDRANT_URL = os.getenv("QDRANT_URL")
 QDRANT_API_KEY = os.getenv("QDRANT_API_KEY")
 
-# Initialize clients & models
 qdrant_client = QdrantClient(url=QDRANT_URL, api_key=QDRANT_API_KEY)
 text_model = SentenceTransformer('all-MiniLM-L6-v2')
 
@@ -19,17 +18,15 @@ def search_semantic_text(query_text: str, top_k: int = 2):
     """
     Converts text query into a 384-d vector and searches Qdrant's 'tourism_text' collection.
     """
-    # 1. Generate text embedding vector
+    # generate txt embedding vector
     query_vector = text_model.encode(query_text).tolist()
 
-    # 2. Search Qdrant
     search_results = qdrant_client.query_points(
         collection_name="tourism_text",
         query=query_vector,
         limit=top_k
     ).points
 
-    # 3. Format and return results
     retrieved_docs = []
     for hit in search_results:
         retrieved_docs.append({
