@@ -1,5 +1,3 @@
-# This pipeline takes an input image (PIL Image or file path), encodes it using CLIP, and searches Qdrant's tourism_images collection for visually similar attractions.
-
 import os
 from PIL import Image
 from dotenv import load_dotenv
@@ -12,14 +10,13 @@ load_dotenv(os.path.join(SCRIPT_DIR, "../../.env"))
 QDRANT_URL = os.getenv("QDRANT_URL")
 QDRANT_API_KEY = os.getenv("QDRANT_API_KEY")
 
-# Initialize Qdrant and CLIP model
 qdrant_client = QdrantClient(url=QDRANT_URL, api_key=QDRANT_API_KEY)
 clip_model = CLIPModel.from_pretrained("openai/clip-vit-base-patch32")
 clip_processor = CLIPProcessor.from_pretrained("openai/clip-vit-base-patch32")
 
 def search_visual_similarity(image_input, top_k: int = 2):
     """
-    Accepts a PIL Image object or file path, encodes it using CLIP, and searches 'tourism_images'.
+    accepts a PIL Image object-> encodes it using CLIP -> and searches 'tourism_images'.
     """
     if isinstance(image_input, str):
         image = Image.open(image_input)
@@ -38,7 +35,6 @@ def search_visual_similarity(image_input, top_k: int = 2):
 
     query_vector = image_features.detach().numpy()[0].tolist()
 
-    # Search Qdrant
     search_results = qdrant_client.query_points(
         collection_name="tourism_images",
         query=query_vector,
